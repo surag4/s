@@ -48,8 +48,9 @@ section {
 
 .contact-links {
     text-align: center;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    
 }
 
 .contact-links  a, .contact-links p{
