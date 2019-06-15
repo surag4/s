@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Design for mobile screen devices or screen below 768px width */
+
+body, html {
+    font-size: 100%;
+    font-family: "Calibri", sans-serif;
+    background-color: #eaf4f4;
+}
+
+/*----Styling the navigation bar ----*/
+/* Setting the margin of logo and the navigation links to 0*/
+nav div:first-child, nav ul{
+    margin: 0;
+}
+
+/*styling logo, first child means the first item of the div tag */
+nav div:first-child{
+    background-color: #78787f;
+    line-height: 0;
+    padding: .4rem 0rem; /* 1 rem = 16 px */ /* it means .4rem is applied on top and bottom  while 0rem is applied for left and right */
+    content: center;
+}
+
+/*placing the logo in the center */
+#navlogo{
+    text-align: center;
+}
+
+/*styling the navigation menu or the whole list of the navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #78787f;
+}
+
+/*styling the list-item */
+nav ul li {
+    border-bottom: 1px solid red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* styling the text of the list-item */
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+}
+
+nav ul a:active{
+        background-color: #2727aa;
+}
+/*----  End of Navigation Bar styling ----*/
+/*---------------------------------------------------------*/
+
+/*---- Styling Footer  ----*/
+footer {
+    display: flex; /* to align the list items horizontally */
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin-top: 1rem;
+    padding-top: 0.3rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer-copyright, footer ul li {
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+}
+
+footer ul li {
+    padding: .008rem .1rem;
+}
+/* End of Footer Styling ----*/
+/*---- navigation and footer styling works for all pages----*/
+
+.head-pages {
+        text-transform: uppercase;
+        color: #000004;
+        font-size: 1.6rem;
+        font-weight: 550;
+        letter-spacing: 0.09rem;
+}
+
+/* Begins styling for individual pages with seperate content */
+/*-----------------------------------------------------------*/
+
+section {
+    margin: 0;
+    padding: 0;
+    margin-top: 4rem;
+    display: block;
+    justify-content: center;
+}
+
+/*---- Styling of Index Page ----*/
+.index-myprofile {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000004;
+    text-align: center;
+}
+
+.person-title {
+    font-size: 2rem;
+    letter-spacing: .085rem;
+    margin-top: .6rem;
+    font-weight: 550; /* to make the text little bit bolder, normal=400 */
+}
+
+.person-prefession {
+    font-size: 1.5rem;
+    letter-spacing: .085rem;
+    margin-top: .1rem;
+    font-weight: 530;
+}
+
+.person-blurb {
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    margin-top: .1rem;
+    font-weight: 300;
+}
+
+.index-mydescription{
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri";
+    color: #000004;
+    display: block;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.home-heading {
+    font-size: 2.2rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+.home-subheading {
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+
+.home-para {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-align: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/*---- End of home-page styling ----*/
+/*-----------------------------------------------------------*/
+
+/*---- Styling About Page ----*/
+.about-page {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.about-title {
+    text-align: left;
+    text-transform: uppercase;
+    color: #000004;
+    font-size: 1.5rem;
+}
+
+.about-title h2 {
+    letter-spacing: .079em;
+    margin-bottom: .5rem;
+}
+
+.about-content{
+    display: block;
+}
+
+.about-pic{
+    width: 35%;
+    overflow: hidden;
+    margin-right: .5rem;
+}
+
+.about-pic img {
+    width: 100%;
+}
+
+.about-paragraph{
+    width: 62%;
+    display: block;
+    flex-wrap: wrap;
+    padding: .5rem;
+}
+
+.about-paragraph p, .about-paragraph h3{
+    margin-bottom: .5rem;
+}
+/*---- End of about-page styling ----*/
+/*-----------------------------------------------------------*/
+
+/*---- Styling Contact Me Page Contents ----*/
+
+/* Styling the google Map */
+.gmap {
+    margin-top: 1rem;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* styling the Contact Me Page form */
+.contactform {
+    width: 90%;
+    margin-top: 0rem;
+    margin: 1rem;
+}
+
+/*resetting the margin and padding for the form */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the form */
+form {
+    margin: 0 auto;
+    padding: 0.6rem 0.5rem;
+    top: 2rem;
+    background: #EDEEEF;
+    text-transform: capitalize;
+    border: 1px solid #262626;
+    font-family: sans-serif;
+    border-radius: .7rem; /*rounded border */
+}
+
+/* styling the heading of the form */
+form h1 {
+    font-family: sans-serif;
+    letter-spacing: .05rem;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+/* arranging the form labels, which includes the form heading and text input area */
+form label {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+/* styling the form headings */
+form label p {
+    margin: 0;
+    width: 20%;
+    padding: 1rem 1rem 0.3rem 0.5rem; /* top right bottom left */
+    text-decoration: none;
+    letter-spacing: .05rem;
+    text-align: left;
+}
+
+/*styling the text input area */
+form .input-area, .message{
+    background-color:#F9F9F9;
+    border: 1px solid #6d6d6de5;
+    padding: .3rem;
+}
+
+/*styling the text input area excluding the last text input box (i.e. message) */
+form .input-area {
+    width: 80%;
+    height: 2.5rem;
+}
+
+/* styling the message input box */
+form .message {
+    width: 80%;
+    height: 5rem;
+}
+
+/* setting the submit button in the middle of the form */
+form .btn {
+    justify-content: center;
+    padding-top: .5rem;
+}
+
+/* styling the submit button */
+form .button{
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    color: #000004;
+    background-color: #C4F1FF;
+    border: 1.5px outset #C7DAF7;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0.15rem 0.15rem 0.3rem #7EA9EE;
+}
+
+/* styling the aside section */
+aside {
+    font-family: sans-serif;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* styling the social media links like a table */
+dl, dt, dd {
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: .5rem .4rem;
+}
+
+/* styling the heading of the social media */
+dt {
+    color: #000004;
+    float: left; 
+    margin-right: 1rem;  
+    width: 4rem;
+    font-size: 1.1rem;
+}
+
+/*styling the text of the social media links */
+dd a {
+    text-decoration: none;
+    color: #000004;
+}
+/*---- End of styling of Contact Me page ----*/
+/*-------------------------------------------*/
+
+/*---- Styling Gallery ----*/
+.galleryitems {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side-contents {
+    margin: 1rem;
+    display: block;
+}
+
+.leftimage1 {
+    width: 100%;
+}
+
+.right-side-contents {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+
+.right-side-image{
+   width: 40%;  
+   margin-top: 1rem;
+   margin-right: 1rem;;
+   overflow: hidden;
+}
+
+.right-side-image-last{
+       width: 50%;
+       margin-top: 1rem;
+       margin-right: 0;
+       overflow: hidden;
+}
+
+.rightimage {
+    width: 100%;
+    height: auto;
+}
+
+/*---- code retrived from file lightbox.min.css for gallery lightbox from link: https://lokeshdhakar.com/projects/lightbox2/----*/
+.lb-loader,.lightbox{text-align:center;line-height:0}.lb-dataContainer:after,.lb-outerContainer:after{content:"";clear:both}body.lb-disable-scrolling{overflow:hidden}.lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}.lightbox{position:absolute;left:0;width:100%;z-index:10000;font-weight:400}.lightbox .lb-image{display:block;height:auto;max-width:inherit;max-height:none;border-radius:3px;border:4px solid #fff}.lightbox a img{border:none}.lb-outerContainer{position:relative;width:250px;height:250px;margin:0 auto;border-radius:4px;background-color:#fff}.lb-loader,.lb-nav{position:absolute;left:0}.lb-outerContainer:after{display:table}.lb-loader{top:43%;height:25%;width:100%}.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../images/loading.gif) no-repeat}.lb-nav{top:0;height:100%;width:100%;z-index:10}.lb-container>.nav{left:0}.lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}.lb-next,.lb-prev{height:100%;cursor:pointer;display:block}.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(../images/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(../images/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}.lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}.lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;border-bottom-left-radius:4px;border-bottom-right-radius:4px}.lb-dataContainer:after{display:table}.lb-data{padding:0 4px;color:#ccc}.lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}.lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}.lb-data .lb-caption a{color:#4ae}.lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(../images/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}.lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
+/*---- end of code for lightbox ----*/
+/*-------- End of styling of Gallery --------*/
+/*-----------------------------------------------------------*/
+
+/*---- Styling Education page ----*/
+.edu-history {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    display: block;
+}
+
+.mit, .nist, .nass {
+    display: flex;
+    justify-content: center;
+    color: #000004;
+    margin-bottom: 1rem;
+}
+
+.date-institution {
+    width: 10%;
+    color: #737475;
+    text-align: center;
+    margin: .5rem 1rem;
+    line-height: 1rem;
+    letter-spacing: .02rem;
+    border-right: 1px solid #78787f;
+}
+
+.date-institution::before{
+    content:" ";
+    display:block;
+    float: right;
+    width:5px;
+    height:5px;
+    background-color: #AA1C1C;
+}
+
+.institute-url {
+    text-decoration: none;
+    color: #D03C48;
+    overflow: hidden;
+}
+
+.description-institution{
+    width: 40%;
+}
+
+.description-institution h2{
+    color: #000004;
+    letter-spacing: .07rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.institute-picture {
+    width: 25%;
+    overflow: hidden;
+}
+
+.eduimg {
+    width: 100%;
+    height: auto;
+}
+/*---- End of styling Education ----*/
+/*-----------------------------------------------------------*/
+
+/*---- Styling Work Experiences ----*/
+.work-history {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    display: block;
+}
+
+.web-development, .app-development, .game-development {
+    display: flex;
+    justify-content: center;
+    color: #000004;
+    margin-bottom: 1rem;
+}
+
+.date-work {
+    width: 8%;
+    color: #737475;
+    text-align: left;
+    margin: 1rem;
+    margin-bottom: 0;
+    line-height: 1rem;
+    letter-spacing: .02rem;
+    border-right: 1px solid #78787f;
+}
+
+.date-work::before{
+    content:" ";
+    display:block;
+    float: right;
+    width:5px;
+    height:5px;
+    background-color: #AA1C1C;
+}
+
+.description-work{
+    width: 40%;
+    margin: .2rem;
+}
+
+.description-work h2{
+    color: #000004;
+    letter-spacing: .07rem;
+    font-weight: 700;
+    padding: .5rem;
+    padding-left: 0;
+}
+
+.work-picture {
+    width: 25%;
+    overflow: hidden;
+}
+
+.workimg {
+    width: 100%;
+    height: auto;
+}
+
+/*---- End of styling Work Experiences ----*/
+/*-----------------------------------------------------------*/
+
+/*----------Styling My Blogs Page -----------*/
+.blog {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.blog-h3 {
+    text-transform: uppercase;
+    margin-left: 10rem;
+    color: #000004;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.q1, .q2, .q3, .q4, .q5 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.blog-date{
+    width: 15%;
+    text-align: right;
+    padding-right: .5rem;
+    border-right: 1px solid red;
+    padding-top: .25rem;
+}
+
+.blog-qa{
+    width: 80%;
+    display: block;
+    margin-left: 1rem;
+}
+
+.blog-question {
+    font-size: 1.4rem;
+}
+
+.blog-answer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: .5rem;
+}
+
+.blog-aside {
+    display: block;
+    text-align: center;
+}
+.blog-gif {
+    width: 35%;
+    display: inline-block;
+}
+
+.blog-gif img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.call {
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+}
+/*-------------End of Styling My Blogs Page-------------*/
+/*-----------------------------------------------------------*/
+
+/*styling for larger devices with screen width greater than 768 pixels */
+
+@media only screen and (min-width:768px) {
+   *{
+       margin: 0;
+       padding: 0;
+   }
+    
+    /* Styling the responsive navigation bar */
+    nav {
+        width: 100%;
+        top:0;
+        background-color: #78787f;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /*styling the first child of the div tag */
+    nav div:first-child{
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+    /* resizing the height of the logo */
+    nav div:first-child img {
+        height: 30px;
+    }
+
+    /* styling the list of the navigation */
+    nav ul{
+        display: flex; /*to make the list items align horizontally */
+        list-style: none;
+        align-items: center;
+        flex-wrap: wrap; /* if there is empty space, occupy the whole space but shrink automatically depending on the screen value */
+        background-color: #78787f;
+    }
+
+    /*styling the list item of the navigation */
+    nav ul li{
+        border-bottom: none;
+        text-transform: uppercase;
+        flex: 1 0 auto; /* flex-grow: 1; flex-shrink: 0; flex-basis: auto; */
+        height: 3.125rem;
+        position: relative; /* to make the hover effect relative to the list items */
+        font-family: "Calibri";
+        letter-spacing: 2.3px; 
+    }
+
+    /*styling the secondary navigation and hiding it in the screen as well */
+    nav ul li ul {
+        position: absolute; 
+        background-color: #78787f;
+        width: 7rem;
+        display: none;
+        opacity: .9;
+    }
+
+    /*making the secondary displayed when hovered to the primary navigation */
+    nav ul li:hover ul{
+        display: block;
+    }
+
+    /*styling the text of the list item used in navigation */
+    nav ul li a{
+        padding: .8rem 1rem;
+        line-height: 1.5rem; /* so the height of the text-box increases which will be used for hover effect */
+    }
+    
+    /*setting a new width for the secondary navigation appearing from career due to the navigation with longer words */
+    .hidden-nav{
+        width:12.4rem;
+    }
+    
+    /*styling the hover effects */
+    nav ul li a::before, nav ul li a::after {
+        content: ""; /*to cover all the links */
+        display: block; /* to bring the top and bottom box effect */
+        position: absolute; /*so the effect remains constant wih relative to the list */
+        left: 0; /* to make the effect start from left side */
+        width: 0%; /* so the effect remains hidden */
+        height: 2px; /* specifies the border width */
+        background-color: #BADEFC; /* specifies the border colour */
+        transition: .3s width ease-in-out; /* to delay the effect */ 
+    }
+
+    nav ul li a:hover::after, nav ul li a:hover::before {
+        width: 100%; /* making the effect visible */
+    }
+    
+    nav ul li a.active{
+        background-color: #2727aa;
+        color: #ffffff;
+    }
+    
+    nav ul li a.selected {
+        background: #2727aa;
+        color: #FFFFFF;
+    }
+
+    section {
+        display: flex;
+    }
+
+    article {
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    aside {
+        margin: 1rem 0; 
+    }
+    
+    /* Index page responsive styling edits */
+    .index-myprofile {
+        margin-left: .5rem;
+    }
+    
+    .home-heading, .home-subheading, .home-para{
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .home-heading {
+        margin-top: 2rem;
+    }
+    
+    .home-subheading {
+        margin-top: 1rem;
+    }
+
+    .home-para {
+        margin-top: 2rem;
+        padding: 0; /*removing padding applied for design below 768px; */
+    }
+    /*----- end of index page styling -----*/
+    /*----- styling about page -----*/
+    .about-content{
+        display: flex;
+    }
+    
+    .about-title {
+        text-align: center;
+    }
+    .galleryitems {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .left-side-contents {
+        margin: 1rem;
+        width: 45%;
+        display: flex;
+    }
+    
+    .leftimage1 {
+        width: 100%;
+    }
+    
+    .right-side-contents {
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+   .images {
+        margin: 0;
+        overflow: hidden;
+   }
+
+   .right-side-image{
+       width: 16%;  
+       max-height: 7rem;
+       margin-top: 1rem;
+       margin-right: 1rem;
+       overflow: hidden;
+       transform: scale(1);
+   }
+    
+    .right-side-image-last{
+       width: 19%;  
+       max-height: 7rem;
+       margin-top: 1rem;
+       margin-right: 0;
+       overflow: hidden;
+   }
+    
+    .rightimage {
+        width: 100%;
+        height: auto;
+    }
+    
+    .rightimage:hover{
+        transform: scale(1.2);
+        transition: all 0.5s ease-in;
+    }
+}

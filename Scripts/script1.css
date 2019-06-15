@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Design for mobile screen devices or screen below 1024px width */
+
+body, html {
+    font-size: 100%;
+    font-family: "Calibri", sans-serif;
+    background-color: #78787f;
+}
+
+section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.heading {
+    display: block;
+}
+
+.cv-header h1 {
+    text-transform: uppercase;
+    letter-spacing: .085rem;
+    font-size: 2rem;
+    color: #C63C41;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.cv-header h2 {
+    text-transform: capitalize;
+    color: #353531;
+    margin-bottom: .2rem;
+}
+
+.header-text {
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: .3rem;
+}
+
+.contact-links {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-links  a, .contact-links p{
+    text-decoration: none;
+    color: #000004;
+    line-height: 1rem;
+    padding: .5rem;
+}
+
+.h3-styles {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: #E54242;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+.h3-styles h3 {
+    font-weight: 300;
+}
+
+.web-developer, .app-developer, .game-developer {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.date {
+    color: #A9A9AD;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.experiences h2 {
+        color: #000004;
+        font-size: 1.4rem;
+        letter-spacing: .05rem;
+        font-weight: 450;
+        margin-bottom: .25rem;
+}
+    
+.experiences p {
+    margin-bottom: .25rem;
+    text-align: left;
+}
+
+.exp-list {
+    color: #000000; 
+    font-size: 1rem;
+}
+
+.experiences ul li {
+    font-size: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.skill-list {
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.skill-list li {
+    border: 1px solid #eaf4f4;
+    padding: .4rem .3rem;
+    margin: .5rem;
+    text-align: center;
+    background-color: #eaf4f4;
+    box-shadow:2px 2px 1px #c3d0e5;
+}
+
+.skill-list li:hover{
+    background-color: #3A304D;
+    color: #FDFCFD;
+    border: 1px solid #ffffff;
+}
+.cv-timeline {
+    margin-bottom: 1rem;
+}
+
+.cv-timeline:last-child {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.uni {
+    text-decoration: none;
+    border: 1px solid #eaf4f4;
+    padding: .3rem;
+    padding-top: 0;
+    text-align: right;
+    color: #8B8B8E;
+    background-color: #E7F2F5;
+    text-align: center;
+}
+@media only screen and (min-width:1024px) {
+    section {
+        width: 60rem;
+        display: flex;
+        margin: 3rem auto;
+        margin-bottom: 0;
+        padding: 1rem 1rem ;
+        background-color: #ffffff;
+    }
+
+    .heading {
+        display: flex;
+    }
+    
+    .picture {
+        width: 18%;
+        float: left;
+    }
+    
+    .picture img {
+        width: 100%;
+    }
+    
+    .cv-header{
+        width: 55%;
+        padding: .4rem;
+    }
+    
+    .header-text {
+        text-align: left;
+        margin: 1rem .5rem;
+    }
+    
+    .contact-links{
+        text-align: left;
+        float: right;
+        width: 22%;
+        height: 35%;
+        margin: .5rem;
+        padding-left: .5rem;
+        border-left: 1px solid red;
+    }
+    
+    .contact-links  a, .contact-links p{
+        padding: 0;
+    }
+    .cv-exp {
+        margin-top: 0;
+        padding: 0 1rem;
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    
+    .h3-styles {
+        margin-left: 20%;
+    }
+    
+    .date{
+        margin-top: 0;
+    }
+    
+    .cv-timeline {
+        display: block;
+    }
+    
+    .web-developer, .app-developer, .game-developer, .mit{
+        display: flex;
+    }   
+    
+    .date {
+        width: 18%;
+        text-align: right;
+        padding: 1rem .5rem;
+    }
+    
+    .experiences {
+        width: 80%;
+        padding: .5rem;
+    }
+    
+    .experiences ul li {
+        margin-left: 0;
+    }
+    
+    .list-experiences {
+        padding-left: 1rem;
+        margin-left: .5rem;
+    }  
+    
+    .skill-list {
+        margin-left: 20%;
+    }
+    
+    .cv-timeline {
+        margin-bottom: 0;
+        margin-bottom: .5rem;
+    }
+    
+    .cv-timeline:last-child {
+        margin-bottom: 0;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+}
