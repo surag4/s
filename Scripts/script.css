@@ -1,4 +1,4 @@
-* {
+*, body {
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,13 @@ body, html {
 }
 
 /*----Styling the navigation bar ----*/
+nav {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: #585865;
+}
+
 /* Setting the margin of logo and the navigation links to 0*/
 nav div:first-child, nav ul{
     margin: 0;
@@ -19,22 +26,24 @@ nav div:first-child, nav ul{
 
 /*styling logo, first child means the first item of the div tag */
 nav div:first-child{
-    background-color: #78787f;
+    background-color: #585865;
     line-height: 0;
     padding: .4rem 0rem; /* 1 rem = 16 px */ /* it means .4rem is applied on top and bottom  while 0rem is applied for left and right */
     content: center;
 }
 
-/*placing the logo in the center */
+/*placing the logo in the left */
 #navlogo{
-    text-align: center;
+    text-align: left;
+    width: 90%;
+    position: absolute;
 }
 
 /*styling the navigation menu or the whole list of the navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    background: #78787f;
+    background: #585865;
 }
 
 /*styling the list-item */
@@ -55,6 +64,80 @@ nav ul li a{
 nav ul a:active{
         background-color: #2727aa;
 }
+
+nav .menu {
+    max-height: 0;
+    clear: both;
+    transition: max-height .5s ease-out;
+    display: none;
+}
+
+/* menu icon */
+nav .menu-icon {
+    background-color: #585865;
+    cursor: pointer;
+    float: right;
+    padding: 1.6rem 1rem;
+    height: auto;
+    position: relative;
+    user-select: none;
+}
+  
+nav .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+nav .menu-icon .navicon:before, nav .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out;
+    width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+    top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+    display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+    max-height: 540px;
+    display: block;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
 /*----  End of Navigation Bar styling ----*/
 /*---------------------------------------------------------*/
 
@@ -420,7 +503,7 @@ dd a {
     margin: .5rem 1rem;
     line-height: 1rem;
     letter-spacing: .02rem;
-    border-right: 1px solid #78787f;
+    border-right: 1px solid #585865;
 }
 
 .date-institution::before{
@@ -484,7 +567,7 @@ dd a {
     margin-bottom: 0;
     line-height: 1rem;
     letter-spacing: .02rem;
-    border-right: 1px solid #78787f;
+    border-right: 1px solid #585865;
 }
 
 .date-work::before{
@@ -599,17 +682,30 @@ dd a {
        padding: 0;
    }
     
+    /*removing the hamburger menu */
+    nav .menu {
+        clear: none;
+        max-height: none;
+        display: flex;
+    }
+
+    nav .menu-icon, .navicon {
+        clear: both;
+        float: none;
+        display: none;
+    }
+    
     /* Styling the responsive navigation bar */
     nav {
         width: 100%;
         top:0;
-        background-color: #78787f;
+        background-color: #585865;
         position: fixed;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
-
+    
     /*styling the first child of the div tag */
     nav div:first-child{
         padding: 0;
@@ -620,14 +716,20 @@ dd a {
     nav div:first-child img {
         height: 30px;
     }
-
+    
+    #navlogo {
+        float: none;
+        width: auto;
+        position: static;
+    }
+    
     /* styling the list of the navigation */
     nav ul{
         display: flex; /*to make the list items align horizontally */
         list-style: none;
         align-items: center;
         flex-wrap: wrap; /* if there is empty space, occupy the whole space but shrink automatically depending on the screen value */
-        background-color: #78787f;
+        background-color: #585865;
     }
 
     /*styling the list item of the navigation */
@@ -644,7 +746,7 @@ dd a {
     /*styling the secondary navigation and hiding it in the screen as well */
     nav ul li ul {
         position: absolute; 
-        background-color: #78787f;
+        background-color: #585865;
         width: 7rem;
         display: none;
         opacity: .9;
