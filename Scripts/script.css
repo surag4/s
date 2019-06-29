@@ -172,6 +172,7 @@ footer ul li {
 
 .head-pages {
         text-transform: uppercase;
+        text-align: center;
         color: #000004;
         font-size: 1.6rem;
         font-weight: 550;
@@ -258,15 +259,16 @@ section {
 /*---- Styling About Page ----*/
 .about-page {
     display: block;
-    width: 70%;
     margin-left: 15%;
 }
 
 .about-title {
-    text-align: left;
+    width: 80%;
+    text-align: center;
     text-transform: uppercase;
     color: #000004;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .about-title h2 {
@@ -276,20 +278,24 @@ section {
 
 .about-content{
     display: block;
+    text-align: justify;
+    padding: 0;
 }
 
 .about-pic{
-    width: 35%;
+    width: 85%;
+    margin: 0;
+    text-align: center;
     overflow: hidden;
-    margin-right: .5rem;
+    margin-bottom: .5rem;
 }
 
 .about-pic img {
-    width: 100%;
+    width: 50%;
 }
 
 .about-paragraph{
-    width: 62%;
+    width: 85%;
     display: block;
     flex-wrap: wrap;
     padding: .5rem;
@@ -457,10 +463,10 @@ dd a {
 }
 
 .right-side-image{
-   width: 40%;  
-   margin-top: 1rem;
-   margin-right: 1rem;;
-   overflow: hidden;
+    width: 40%;  
+    margin-top: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
 }
 
 .right-side-image-last{
@@ -490,39 +496,33 @@ dd a {
 }
 
 .mit, .nist, .nass {
-    display: flex;
+    display: block;
+    width: 100%;
+    text-align: justify;
     justify-content: center;
     color: #000004;
     margin-bottom: 1rem;
 }
 
 .date-institution {
-    width: 10%;
+    width: 95%;
     color: #737475;
     text-align: center;
     margin: .5rem 1rem;
+    margin-bottom: 1re,;
     line-height: 1rem;
     letter-spacing: .02rem;
-    border-right: 1px solid #585865;
-}
-
-.date-institution::before{
-    content:" ";
-    display:block;
-    float: right;
-    width:5px;
-    height:5px;
-    background-color: #AA1C1C;
 }
 
 .institute-url {
     text-decoration: none;
     color: #D03C48;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .description-institution{
-    width: 40%;
+    width: 95%;
+    margin: 0 1rem;
 }
 
 .description-institution h2{
@@ -533,12 +533,14 @@ dd a {
 }
 
 .institute-picture {
-    width: 25%;
+    width: 100%;
+    text-align: center;
     overflow: hidden;
+    margin: 1rem;
 }
 
 .eduimg {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 /*---- End of styling Education ----*/
@@ -829,7 +831,14 @@ dd a {
         padding: 0; /*removing padding applied for design below 768px; */
     }
     /*----- end of index page styling -----*/
+
     /*----- styling about page -----*/
+    .about-page {
+        display: block;
+        width: 82%;
+        margin-left: 10%;
+    }
+
     .about-content{
         display: flex;
     }
@@ -837,6 +846,29 @@ dd a {
     .about-title {
         text-align: center;
     }
+
+    .about-pic{
+        width: 35%;
+        overflow: hidden;
+        margin-right: .5rem;
+        text-align: center;
+    }
+    
+    .about-pic img {
+        width: 80%;
+    }
+
+    .about-paragraph{
+        width: 64%;
+        display: block;
+        flex-wrap: wrap;
+        padding: .5rem;
+    }
+    
+    .about-paragraph p, .about-paragraph h3{
+        margin-bottom: 1rem;
+    }
+    /*----- styling the gallery page ---- */
     .galleryitems {
         margin: 0;
         padding: 0;
@@ -893,4 +925,57 @@ dd a {
         transform: scale(1.2);
         transition: all 0.5s ease-in;
     }
+    /*----------  End of Gallery Page styling ---------*/
+
+    /*---------- Styling Education Page ------------*/
+    .edu-history {
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        display: block;
+    }
+    
+    .mit, .nist, .nass {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .date-institution {
+        width: 10%;
+        margin: .5rem 1rem;
+        line-height: 1rem;
+        overflow: hidden;
+        border-right: 1px solid #585865;
+    }
+    
+    .date-institution::before{
+        content:" ";
+        display:block;
+        float: right;
+    }
+    
+    .institute-url {
+        text-decoration: none;
+        color: #D03C48;
+    }
+    
+    .description-institution{
+        width: 40%;
+    }
+    
+    .description-institution h2{
+        padding: .5rem;
+    }
+    
+    .institute-picture {
+        width: 25%;
+        overflow: hidden;
+    }
+    
+    .eduimg {
+        width: 100%;
+        height: auto;
+    }
+    /*------------- End of Education page styling ------------- */    
 }
