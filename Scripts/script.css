@@ -261,11 +261,11 @@ section {
 /*---- Styling About Page ----*/
 .about-page {
     display: block;
-    margin-left: 15%;
+    margin-left: 1rem;
 }
 
 .about-title {
-    width: 80%;
+    width: 95%;
     text-align: center;
     text-transform: uppercase;
     color: #000004;
@@ -285,7 +285,7 @@ section {
 }
 
 .about-pic{
-    width: 85%;
+    width: 95%;
     margin: 0;
     text-align: center;
     overflow: hidden;
@@ -297,7 +297,7 @@ section {
 }
 
 .about-paragraph{
-    width: 85%;
+    width: 95%;
     display: block;
     flex-wrap: wrap;
     padding: .5rem;
@@ -506,7 +506,7 @@ dd a {
 
 .mit, .nist, .nass {
     display: block;
-    width: 100%;
+    width: 97%;
     text-align: justify;
     justify-content: center;
     color: #000004;
@@ -542,7 +542,7 @@ dd a {
 }
 
 .institute-picture {
-    width: 100%;
+    width: 95%;
     text-align: center;
     overflow: hidden;
     margin: 1rem;
@@ -639,7 +639,6 @@ dd a {
 .blog-qa{
     width: 95%;
     display: block;
-    margin-left: 1rem;
 }
 
 .blog-question {
